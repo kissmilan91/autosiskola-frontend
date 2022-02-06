@@ -1,1 +1,32 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-md bg-primary navbar-light">
+    <div class="container-fluid">
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="/index" img class="nav-item nav-link active">Kezdőlap</a>
+        <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" href="/szolgaltatasok" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategóriák</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="/webfejlesztes">A kategória</a></li>
+              <li><a class="dropdown-item" href="/forditas">B kategória</a></li>
+              <li><a class="dropdown-item" href="/forditas">B+E kategória</a></li>
+              <li><a class="dropdown-item" href="/programozas">C kategória</a></li>
+              <li><a class="dropdown-item" href="/programozas">C + E kategória</a></li>
+              <li><a class="dropdown-item" href="/programozas">D kategória</a></li>
+              <li><a class="dropdown-item" href="/programozas">E kategória</a></li>
+              <li><a class="dropdown-item" href="/tanacsadas">T kategória</a></li>
+            </ul>
+        </div>
+          <a href="/ajanlataink" class="nav-item nav-link">Áraink</a>
+          <a href="/info" class="nav-item nav-link">Információk</a>
+          <a href="/kapcsolat" class="nav-item nav-link">Kapcsolat</a>
+        </div>
+      </div>
+      <div class="navbar-nav nav-item nav-link bg-primary navbar-right navbar-light d-flex">
+          <a href="/index" img class="nav-item nav-link active">Bejelentkezés</a>
+          <a href="/index" img class="nav-item nav-link active">Profil</a>
+      </div>
+    </div>
+  </nav>
