@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './navbar/home/home.component';
-import { CategoryComponent } from './navbar/category/category.component';
 import { AmComponent } from './navbar/category/am/am.component';
 import { BComponent } from './navbar/category/b/b.component';
 import { CComponent } from './navbar/category/c/c.component';
@@ -32,7 +31,6 @@ import { StudentsComponent } from './profiles/admin/students/students.component'
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    CategoryComponent,
     AmComponent,
     BComponent,
     CComponent,
