@@ -29,6 +29,8 @@ import { D1eComponent } from './navbar/category/d/d1e/d1e.component';
 import { DeComponent } from './navbar/category/d/de/de.component';
 import { CeComponent } from './navbar/category/c/ce/ce.component';
 import { C1eComponent } from './navbar/category/c/c1e/c1e.component';
+import { ContactComponent } from './navbar/contact/contact.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { C1eComponent } from './navbar/category/c/c1e/c1e.component';
     D1eComponent,
     DeComponent,
     CeComponent,
-    C1eComponent
+    C1eComponent,
+    ContactComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
