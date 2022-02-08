@@ -1,0 +1,35 @@
+.kapcsolat {
+    padding: 22px;
+    margin-top: 0px;
+    background: #eee;
+}
+
+.decoration {
+    padding: 10px;
+}
+
+.h1 {
+    font-weight: bolder;
+    padding: 10px;
+    margin: 6px;
+}
+
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+    .tavolsag {
+        margin-left: 46px;
+        padding: calc(20px);
+        text-align: center;
+    }

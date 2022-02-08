@@ -23,14 +23,9 @@ import { LessonComponent } from './profiles/admin/lesson/lesson.component';
 import { InstructorsComponent } from './profiles/admin/instructors/instructors.component';
 import { VehicleadminComponent } from './profiles/admin/vehicleadmin/vehicleadmin.component';
 import { StudentsComponent } from './profiles/admin/students/students.component';
-import { BeComponent } from './navbar/category/b/be/be.component';
-import { D1Component } from './navbar/category/d/d1/d1.component';
-import { D1eComponent } from './navbar/category/d/d1e/d1e.component';
-import { DeComponent } from './navbar/category/d/de/de.component';
-import { CeComponent } from './navbar/category/c/ce/ce.component';
-import { C1eComponent } from './navbar/category/c/c1e/c1e.component';
 import { ContactComponent } from './navbar/contact/contact.component';
-import { ContentComponent } from './content/content.component';
+import { RegistrationComponent } from './navbar/registration/registration.component';
+import { LoginComponent } from './navbar/login/login.component';
 
 @NgModule({
   declarations: [
@@ -55,14 +50,9 @@ import { ContentComponent } from './content/content.component';
     InstructorsComponent,
     VehicleadminComponent,
     StudentsComponent,
-    BeComponent,
-    D1Component,
-    D1eComponent,
-    DeComponent,
-    CeComponent,
-    C1eComponent,
     ContactComponent,
-    ContentComponent
+    RegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
