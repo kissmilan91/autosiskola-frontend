@@ -26,6 +26,7 @@ import { StudentsComponent } from './profiles/admin/students/students.component'
 import { ContactComponent } from './navbar/contact/contact.component';
 import { RegistrationComponent } from './navbar/registration/registration.component';
 import { LoginComponent } from './navbar/login/login.component';
+import { CoursedataComponent } from './profiles/user/coursedata/coursedata.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { LoginComponent } from './navbar/login/login.component';
     ContactComponent,
     RegistrationComponent,
     LoginComponent,
+    CoursedataComponent,
   ],
   imports: [
     BrowserModule,

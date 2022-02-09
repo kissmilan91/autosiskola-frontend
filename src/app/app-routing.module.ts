@@ -15,6 +15,14 @@ import { VehiclesComponent } from './navbar/vehicles/vehicles.component';
 import { AdminComponent } from './profiles/admin/admin.component';
 import { LoginComponent } from './navbar/login/login.component';
 import { UserComponent } from './profiles/user/user.component';
+import { CoursedataComponent } from './profiles/user/coursedata/coursedata.component';
+import { CategoryComponent } from './profiles/admin/category/category.component';
+import { LessonComponent } from './profiles/admin/lesson/lesson.component';
+import { StudentsComponent } from './profiles/admin/students/students.component';
+import { Subject } from 'rxjs';
+import { SubjectsComponent } from './profiles/admin/subjects/subjects.component';
+import { VehicleadminComponent } from './profiles/admin/vehicleadmin/vehicleadmin.component';
+import { InstructorsComponent } from './profiles/admin/instructors/instructors.component';
 
 const routes: Routes = [
   {path:  "", pathMatch:  "full" ,redirectTo:  "index"},
@@ -37,8 +45,17 @@ const routes: Routes = [
   {path: "vehicles",component: VehiclesComponent},
   {path: "admin",component: AdminComponent},
   {path: "user",component: UserComponent},
+  {path: "coursedata",component: CoursedataComponent},
   {path: "registration",component: RegistrationComponent},
   {path: "login",component: LoginComponent},
+  {path: "category",component: CategoryComponent},
+  {path: "instructors",component: InstructorsComponent},
+  {path: "lesson",component: LessonComponent},
+  {path: "students",component: StudentsComponent},
+  {path: "subjects",component: SubjectsComponent},
+  {path: "vehicleadmin",component: VehicleadminComponent},
+
+
 
 ];
 
