@@ -2,212 +2,76 @@
     background-color: #eee;
     padding: 40px;
 }
-
-p {
-    color: grey
+#section2 {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
 }
 
-#heading {
-    text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal
+
+.stepwizard-step p {
+    margin-top: 0px;
+    color:#666;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
 }
 
-#msform {
+.stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
+    opacity:1 !important;
+    color:#bbb;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+.stepwizard-step {
+    display: table-cell;
     text-align: center;
     position: relative;
-    margin-top: 20px
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
 }
 
-#msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
+.checkbox-lg .custom-control-label::before, 
+.checkbox-lg .custom-control-label::after {
+  top: .8rem;
+  width: 1.55rem;
+  height: 1.55rem;
 }
 
-.form-card {
-    text-align: left
+.checkbox-lg .custom-control-label {
+  padding-top: 13px;
+  padding-left: 6px;
 }
 
-#msform fieldset:not(:first-of-type) {
-    display: none
+
+.checkbox-xl .custom-control-label::before, 
+.checkbox-xl .custom-control-label::after {
+  top: 1.2rem;
+  width: 1.85rem;
+  height: 1.85rem;
 }
 
-#msform input,
-#msform textarea {
-    padding: 8px 15px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    background-color: #ECEFF1;
-    font-size: 16px;
-    letter-spacing: 1px
-}
-
-#msform input:focus,
-#msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #673AB7;
-    outline-width: 0
-}
-
-#msform .action-button {
-    width: 100px;
-    background: #673AB7;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
-}
-
-#msform .action-button:hover,
-#msform .action-button:focus {
-    background-color: #311B92
-}
-
-#msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
-}
-
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #000000
-}
-
-.card {
-    z-index: 0;
-    border: none;
-    position: relative
-}
-
-.fs-title {
-    font-size: 25px;
-    color: #673AB7;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left
-}
-
-.purple-text {
-    color: #673AB7;
-    font-weight: normal
-}
-
-.steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right
-}
-
-.fieldlabels {
-    color: gray;
-    text-align: left
-}
-
-#progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey
-}
-
-#progressbar .active {
-    color: #673AB7
-}
-
-#progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 25%;
-    float: left;
-    position: relative;
-    font-weight: 400
-}
-
-#progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f13e"
-}
-
-#progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
-}
-
-#progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f030"
-}
-
-#progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
-}
-
-#progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
-    font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
-}
-
-#progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
-}
-
-#progressbar li.active:before,
-#progressbar li.active:after {
-    background: #673AB7
-}
-
-.progress {
-    height: 20px
-}
-
-.progress-bar {
-    background-color: #673AB7
-}
-
-.fit-image {
-    width: 100%;
-    object-fit: cover
+.checkbox-xl .custom-control-label {
+  padding-top: 23px;
+  padding-left: 10px;
 }
