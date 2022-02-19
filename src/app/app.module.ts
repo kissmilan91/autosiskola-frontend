@@ -27,6 +27,7 @@ import { ContactComponent } from './navbar/contact/contact.component';
 import { RegistrationComponent } from './navbar/registration/registration.component';
 import { LoginComponent } from './navbar/login/login.component';
 import { CoursedataComponent } from './profiles/user/coursedata/coursedata.component';
+import { CategoryComponent } from './profiles/admin/category/category.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { CoursedataComponent } from './profiles/user/coursedata/coursedata.compo
     RegistrationComponent,
     LoginComponent,
     CoursedataComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
