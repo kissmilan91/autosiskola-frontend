@@ -28,6 +28,7 @@ import { RegistrationComponent } from './navbar/registration/registration.compon
 import { LoginComponent } from './navbar/login/login.component';
 import { CoursedataComponent } from './profiles/user/coursedata/coursedata.component';
 import { CategoryComponent } from './profiles/admin/category/category.component';
+import { RecaptchaModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { CategoryComponent } from './profiles/admin/category/category.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RecaptchaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
