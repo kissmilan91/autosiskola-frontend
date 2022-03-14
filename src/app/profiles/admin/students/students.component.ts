@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-students',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit {
+  students:any;
 
-  constructor() { }
+  constructor(private dataService:DataService) { }
 
   ngOnInit(): void {
+    this.studentsData();
+  }
+
+  studentsData() {
+    this.dataService.getStudentsData().subscribe(res => {
+      this.students = res;
+    });
   }
 
 }
