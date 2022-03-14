@@ -33,11 +33,18 @@
             <a href="/vehicles" class="nav-item nav-link">Gépjárművek</a>
           </div>
         </div>
+
         <div class="navbar-nav nav-item nav-link bg-primary navbar-right navbar-light d-flex">
-            <a href="/login" img class="nav-item nav-link active">Bejelentkezés</a>
-            <a href="/registration" img class="nav-item nav-link active">Regisztráció</a>
-            <a href="/user" img class="nav-item nav-link active">Profil</a>
-            <a href="/admin" img class="nav-item nav-link active">Admin</a>
+          <div class="btn-group dropstart">
+            <button type="button" class="btn btn-properties dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle"></i>
+            </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="/user">Profil</a></li>
+                <li><a class="dropdown-item" href="/admin">Admin</a></li>
+                <li><a class="dropdown-item" href="/admin">Dashboard</a></li>
+              </ul>
+            </div>
         </div>
       </div>
     </nav>

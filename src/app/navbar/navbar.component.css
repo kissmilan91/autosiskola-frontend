@@ -1,0 +1,37 @@
+.btn-properties {
+    font-size: large;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.6;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.btn-properties:hover {
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+}
+
+.btn-properties:after {
+    background: #f1f1f1;
+    display: list-item;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn-properties:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
