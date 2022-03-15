@@ -66,20 +66,32 @@
       <form>
         <div class="mb-3">
           <!-- Első sor -->
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="vezeteknev" class="form-label">Vezetéknév</label>
+          <input type="text" value="" class="form-control" id="vezeteknev">
           <!-- Második sor -->
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <!-- Második sor -->
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="keresztnev" class="form-label">Keresztnév</label>
+          <input type="text" value="" class="form-control" id="keresztnev">
+          <!-- Harmadik sor -->
+          <label for="anyjaneve" class="form-label">Anyja neve</label>
+          <input type="text" value="" class="form-control" id="anyjaneve">
+          <!-- Negyedik sor -->
+          <label for="szuletesi_hely" class="form-label">Születési hely</label>
+          <input type="text" value="" class="form-control" id="szuletesi_hely">
+          <!-- Ötödik sor -->
+          <label for="szuletesi_ido" class="form-label">Születési idő</label>
+          <input type="date" value="" class="form-control" id="szuletesi_ido">
+          <!-- Hatodik sor -->
+          <label for="telefonszam" class="form-label">Telefonszám</label>
+          <input type="number" value="" class="form-control" id="telefonszam">
+          <!-- Hetedik sor -->
+          <label for="email" class="form-label">Email cím</label>
+          <input type="email" value="" class="form-control" id="email">
         </div>
       </form>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
-      <button type="button" class="btn btn-primary">Mentés</button>
+      <button type="button" class="btn btn-secondary btn-sm mx-2" data-bs-dismiss="modal">Mégse</button>
+      <button type="button" class="btn btn-primary btn-sm mx-2" routerLink="/{{item.id}}">Mentés</button>
     </div>
   </div>
 </div>
