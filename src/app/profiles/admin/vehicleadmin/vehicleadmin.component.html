@@ -48,8 +48,8 @@
                           <td>{{ item.tipus }}</td>
                           <td>{{ item.rendszam }}</td>
                           <td>
-                          <button type="button" class="btn btn-properties btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Szerkesztés </button>
-                          <button type="button" class="btn btn-properties btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
+                            <button type="button" class="btn btn-properties btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Szerkesztés </button>
+                            <button type="button" class="btn btn-properties btn-danger" (click)="deleteVehicleData(item.id)"> X </button>
                           </td>
 
 <!-- Modal -->

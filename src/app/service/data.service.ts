@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private httpClient:HttpClient) { }
-
+  
+  //get
   getStudentsData() {
     return this.httpClient.get('http://127.0.0.1:8000/api/students');
   }
@@ -18,6 +19,32 @@ export class DataService {
 
   getVehiclesData() {
     return this.httpClient.get('http://127.0.0.1:8000/api/vehicles');
+  }
+
+  //insert
+  insertStudentsData(studentData:any) {
+    return this.httpClient.post('http://127.0.0.1:8000/api/students', studentData);
+  }
+  
+  insertInstructorsData(instructorData:any) {
+    return this.httpClient.post('http://127.0.0.1:8000/api/instructors', instructorData);
+  }
+
+  insertVehiclesData(vehicleData:any) {
+    return this.httpClient.post('http://127.0.0.1:8000/api/vehicles', vehicleData);
+  }
+
+  //Delete
+  deleteStudentData(id:number) {
+    return this.httpClient.delete('http://127.0.0.1:8000/api/students/'+id);
+  }
+
+  deleteVehicleData(id:number) {
+    return this.httpClient.delete('http://127.0.0.1:8000/api/vehicles/'+id);
+  }
+
+  deleteInstructorData(id:number) {
+    return this.httpClient.delete('http://127.0.0.1:8000/api/instructors/'+id);
   }
 
 }

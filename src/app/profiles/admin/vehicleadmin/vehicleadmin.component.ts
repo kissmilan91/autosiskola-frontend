@@ -21,4 +21,10 @@ export class VehicleadminComponent implements OnInit {
     });
   }
 
+  deleteVehicleData(id:number) {
+    this.dataService.deleteVehicleData(id).subscribe(res => {
+      this.vehiclesData();
+    })
+  }
+
 }

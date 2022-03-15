@@ -31,9 +31,146 @@
                       </nav>
                 </div>
                 <div class="col-10 bg-light">
-                  <p>Ide jön az Admin tartalma!</p>
+                  <div class="container mt-5">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Tanuló hozzáadása
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- Tartalom rögzítése -->
+                                <form (ngSubmit)="insertStudent()">
+                                  <div class="form-group">
+                                    <label for="vezeteknev">Vezetéknév:</label>
+                                    <input type="text" name="vezeteknev" class="form-control" [(ngModel)]="student.vezeteknev">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="keresztnev">Keresztnév:</label>
+                                    <input type="text" name="keresztnev" class="form-control" [(ngModel)]="student.keresztnev">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="anyjaneve">Anyja neve::</label>
+                                    <input type="text" name="anyjaneve" class="form-control" [(ngModel)]="student.anyjaneve">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="szuletesi_hely">Születési hely:</label>
+                                    <input type="text" name="szuletesi_hely" class="form-control" [(ngModel)]="student.szuletesi_hely">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="szuletesi_ido">Születési idő:</label>
+                                    <input type="text" name="szuletesi_ido" class="form-control" [(ngModel)]="student.szuletesi_ido">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="telefonszam">Telefonszám:</label>
+                                    <input type="text" name="telefonszam" class="form-control" [(ngModel)]="student.telefonszam">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="text" name="email" class="form-control" [(ngModel)]="student.email">
+                                  </div>
+                                  <button class="btn btn-warning btn-sm mt-4">Mentés</button>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Oktató felvitele
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <!-- Tartalom rögzítése -->
+                              <form (ngSubmit)="insertInstructor()">
+                              <div class="form-group">
+                                <label for="vezeteknev">Vezetéknév:</label>
+                                <input type="text" name="vezeteknev" class="form-control" [(ngModel)]="instructor.vezeteknev">
+                              </div>
+                              <div class="form-group">
+                                <label for="keresztnev">Keresztnév:</label>
+                                <input type="text" name="keresztnev" class="form-control" [(ngModel)]="instructor.keresztnev">
+                              </div>
+                              <div class="form-group">
+                                <label for="anyjaneve">Anyja neve::</label>
+                                <input type="text" name="anyjaneve" class="form-control" [(ngModel)]="instructor.anyjaneve">
+                              </div>
+                              <div class="form-group">
+                                <label for="szuletesi_hely">Születési hely:</label>
+                                <input type="text" name="szuletesi_hely" class="form-control" [(ngModel)]="instructor.szuletesi_hely">
+                              </div>
+                              <div class="form-group">
+                                <label for="szuletesi_ido">Születési idő:</label>
+                                <input type="text" name="szuletesi_ido" class="form-control" [(ngModel)]="instructor.szuletesi_ido">
+                              </div>
+                              <div class="form-group">
+                                <label for="telefonszam">Telefonszám:</label>
+                                <input type="text" name="telefonszam" class="form-control" [(ngModel)]="instructor.telefonszam">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" class="form-control" [(ngModel)]="instructor.email">
+                              </div>
+                              <button class="btn btn-warning btn-sm mt-4">Mentés</button>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Gépjármű rögzítése
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                               <!-- Tartalom rögzítése -->
+                               <form (ngSubmit)="insertVehicle()">
+                                <div class="form-group">
+                                  <label for="gyartmany">Gyártmány:</label>
+                                  <input type="text" name="gyartmany" class="form-control" [(ngModel)]="vehicle.gyartmany">
+                                </div>
+                                <div class="form-group">
+                                  <label for="tipus">Típus:</label>
+                                  <input type="text" name="tipus" class="form-control" [(ngModel)]="vehicle.tipus">
+                                </div>
+                                <div class="form-group">
+                                  <label for="rendszam">Rendszám:</label>
+                                  <input type="text" name="rendszam" class="form-control" [(ngModel)]="vehicle.rendszam">
+                                </div>
+                                <div class="form-group">
+                                  <label for="engedelyszam">Engedélyszám:</label>
+                                  <input type="text" name="engedelyszam" class="form-control" [(ngModel)]="vehicle.engedelyszam">
+                                </div>
+                                <div class="form-group">
+                                  <label for="engedely_ervenyesseg">Engedély érvényessége:</label>
+                                  <input type="text" name="engedely_ervenyesseg" class="form-control" [(ngModel)]="vehicle.engedely_ervenyesseg">
+                                </div>
+                                <div class="form-group">
+                                  <label for="tulajdonos">Tulajdonos:</label>
+                                  <input type="text" name="tulajdonos" class="form-control" [(ngModel)]="vehicle.tulajdonos">
+                                </div>
+                                <button class="btn btn-warning btn-sm mt-4">Mentés</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                              További adatok felvitelének a lehetősége - ha nem szükséges, későbbiekben törlendő
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Igen van! Az elméleti tandíj egyösszegben fizetendő, de a gyakorlati órák díjait akár alkalmanként/levezetett óránként is lehet fizetni. A vizsgadíjakat a vizsga előtt 10 nappal kell befizetni.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
               </div>
-              
             </div>
         </div>
 </section>

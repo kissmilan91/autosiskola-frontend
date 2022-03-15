@@ -21,4 +21,10 @@ export class InstructorsComponent implements OnInit {
     });
   }
 
+  deleteInstructorData(id:number) {
+    this.dataService.deleteInstructorData(id).subscribe(res => {
+      this.instructorsData();
+    })
+  }
+
 }
