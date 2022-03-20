@@ -43,20 +43,18 @@ const routes: Routes = [
   {path: "information",component: InformationComponent},
   {path: "instructor",component: InstructorComponent},
   {path: "vehicles",component: VehiclesComponent},
-  {path: "admin",component: AdminComponent},
-  {path: "user",component: UserComponent},
   {path: "coursedata",component: CoursedataComponent},
-  {path: "registration",component: RegistrationComponent},
-  {path: "login",component: LoginComponent},
   {path: "category",component: CategoryComponent},
   {path: "instructors",component: InstructorsComponent},
   {path: "lesson",component: LessonComponent},
   {path: "students",component: StudentsComponent},
   {path: "subjects",component: SubjectsComponent},
   {path: "vehicleadmin",component: VehicleadminComponent},
-
-
-
+  {path: "admin",component: AdminComponent},
+  {path: "user",component: UserComponent},
+  {path: "registration",component: RegistrationComponent},
+  {path: "login",component: LoginComponent},
+  {path: "logout",component: HomeComponent},
 ];
 
 @NgModule({

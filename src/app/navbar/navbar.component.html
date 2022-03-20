@@ -40,9 +40,10 @@
               <i class="bi bi-person-circle"></i>
             </button>
               <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="/user">Profil</a></li>
-                <li><a class="dropdown-item" href="/admin">Admin</a></li>
-                <li><a class="dropdown-item" href="/admin">Dashboard</a></li>
+                <li><a class="dropdown-item" href="/login" *ngIf="!loggedin">Bejelentkezés</a></li>
+                <li><a class="dropdown-item" href="/user" *ngIf="loggedin">Profil</a></li>
+                <li><a class="dropdown-item" href="/admin" *ngIf="loggedin">Admin</a></li>
+                <li><a class="dropdown-item" href="/logout" *ngIf="loggedin">Kijelentkezés</a></li>
               </ul>
             </div>
         </div>
